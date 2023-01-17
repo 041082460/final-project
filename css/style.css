@@ -62,9 +62,9 @@ table {
 background: url(../img/vision.jpg) center no-repeat;
 background-size: cover;
 color: white;
-height: 350px;
+height: 300px;
 display: grid;
-grid-template-rows: repeat(3, 1fr);
+grid-template-rows: repeat(5, 1fr);
 
 
 }
@@ -170,9 +170,7 @@ h4{
 
 .section-about div {
     background-color: #ffe6ac;
-
-margin-bottom: 1rem;
-
+    margin-bottom: 1rem;
 }
 
 .section-about h2{
@@ -188,17 +186,26 @@ margin-bottom: 1rem;
 }
 
 
-
 .container button{
-   height: 5.5rem;
-   width: 240px;
-   margin-left: 0.5rem;
-   margin-bottom: 0.5rem;
-   font-size: 25px;
-   background-color: #000;
-   
+    height: 100px;
+    width: 250px;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 25px;
+    
+    color: #000;
+    
+ }
+ 
+.frustration button{
+    background-color: #000;
+    width: 50px;
+    height: 50px;
 }
 
+.container .contact{
+    background-color: #000;
+}
 .section-contact .contact{
     color: darkorange;
     font-size: 20px;
@@ -212,11 +219,15 @@ margin-bottom: 1rem;
 .section-vision .container button{
     color: white;
     border-color: #c78c06;
-    grid-row: 4 / span 3 ;
+    grid-row: 5 / span 4 ;
     
 }
 
-
+.something {
+    background-color: #000;
+    width: 100px;
+    height: 50px;
+}
 
 
 .section-services .container button{
@@ -251,7 +262,11 @@ p{
     font-size: 20px;
     margin-left: 0.5rem;
     display: grid;
-    grid-template-columns: auto;
+    grid-row: 4 / span 1;
+}
+
+.section-vision .top-right{
+    grid-row: 2 / span 1;
 }
 
 .section-contact h3{
@@ -314,7 +329,6 @@ nav .current a:link, nav .current a:visited{
     padding-top: 50px;
     padding-bottom: 50px;
     
-
 }
 /* CLASS CODE BEGINNING*/
 
@@ -331,12 +345,164 @@ nav .current a:link, nav .current a:visited{
 
 @media screen and (min-width: 1200px) {
 
-    .container{ 
+    /* header desktop beginning */
+    header .container{ 
         width: 1168px;
-        padding: 0 16px;
+        padding: 0 39px;
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-welcome{
+        background-image: url(../img/main-banner.jpg);
+        background-size: cover;
+        padding-top: 68px;
+        padding-bottom: 68px;
+        
+    }
+
+    ul li {
+        list-style-type: none;
+        background-color: #000;
+        color: #c78c06;
+        text-align: center;
+        width: 125px ;
+        margin-top: 15px;
+        
+    }
+
+    header .container input{
+        width: 200px;
+        height: 31px;
+        display: flex;
+        margin-top: 51px;
+        margin-left: auto;
+        display: flex;
+
+    }
+
+    form{
+        display: flex;
+        margin-left: 20px;
     }
     
+    .frustration button{
+        height: 36px;
+        width: 40px;
+        font-size: 25px;
+        background-color: black;
+        align-items: center;
+        margin-left: auto;
+        margin-top: 51px;
+        display: flex;
+        justify-content: center;
+        grid-row: -2 / span 1;
+    }
+    
+    ul{
+        display: flex;
+       
+    }
+    .logo{
+    background-color: black ;
+    margin-right: 50px;
+    margin-left: 0;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    
+    }
+
+    nav a:link, nav a:visited{
+        font-size: 18px;
+        color: #c78c06;
+        text-decoration: none; 
+        padding-bottom: 17px;
+        padding-top: 17px;
+        margin-top: 25px;
+       
+    }
+
+    /* header desktop end */
+
+    /* Star Tree beginning */
+
+    .header-welcome .container{
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        width: 1020px;
+        height: 510px;
+    }
+
+    h1{
+        font-size: 81px;
+        line-height: 106px;
+        font-weight: bold;
+        margin-left: 10px ;
+    }
+
+
+    /* Star Tree End*/
+
+    /* ABOUT US SECTION BEGINNING*/
+
+    .ping-pong img{
+        width: 500px;
+        height: 250px;
+        margin-top: 20px;
+        float: left;
+       margin-left: 20px;
+      
+
+    }
+
+
+    .ping-pong h2{
+        font-size: 40px;
+        line-height: 1.5;
+        font-weight: bold; 
+        align-content:space-between;
+        margin-left: 50px;
+    }
+
+    .ping-pong p{
+        font-size: 12px;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .section-about div {
+        background-color: #ffe6ac;
+        margin-bottom: 1rem;
+        width: 1200px;
+        display: flex;
+    }
+
+    /* I Gave up */
+
+    /* OUR SERVICES */
+
+    .section-services h2 {
+        display: flex;
+        
+    }
+
+    .section-services{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .marketing {
+        grid-row: 2 / span 1;
+        grid-column: 3 / span 2;
+    }
+
+    .second{
+        grid-row: 2 / span 2;
+    }
 }
-
-
